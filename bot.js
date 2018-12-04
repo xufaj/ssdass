@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "put your prefix";
+const prefix = "1";
 /////////////////////////
 ////////////////////////
 
@@ -458,5 +458,5 @@ if (message.content.startsWith(prefix + 'setstream')) {
     message.channel.sendMessage(`Streaming: **${argresult}`)
 }
 	});
-client.login("");
+client.login(process.env.BOT_TOKEN);
 
